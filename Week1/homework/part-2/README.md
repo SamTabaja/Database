@@ -1,6 +1,6 @@
 # Steps to run the homework
 
-###### its it recommended to install nodemon for easire work. 
+###### install the dependencies and also `nodemon` it is recommended for easire browsing. 
 ```
 npm install -g nodemon
 ```
