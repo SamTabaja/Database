@@ -17,7 +17,7 @@ connection.connect(err => {
   console.log("connected");
 });
 
-//query from country
+//query from database .. print result into brawser.
 app.get("/query/:condition", (req, res) => {
   console.log(req.params.condition);
   let query = `${req.params.condition}`;
