@@ -50,4 +50,3 @@ connection.connect(err => {
     if (err) throw err.message;
   });
 });
-

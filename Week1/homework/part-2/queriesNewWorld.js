@@ -18,17 +18,7 @@ connection.connect(err => {
 });
 
 //query from country
-app.get("/query/country/:condition", (req, res) => {
-  console.log(req.params.condition);
-  let query = `${req.params.condition}`;
-  connection.query(query, (err, result) => {
-    if (err) throw err;
-    //console.log(result);
-    res.send(JSON.stringify({ result }));
-  });
-});
-
-app.get("/query/city/:condition", (req, res) => {
+app.get("/query/:condition", (req, res) => {
   console.log(req.params.condition);
   let query = `${req.params.condition}`;
   connection.query(query, (err, result) => {
